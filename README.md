@@ -6,29 +6,76 @@ Edit vertical talking-head videos with clean speech, language-aware captions, to
 
 A standalone skill from my own creator workflow, shared as a configurable public edition. Instructions and workflow references are available in English and Simplified Chinese.
 
-## What it does
+## See the result
 
-- Conservative voice cleanup before speech editing.
-- Remove failed takes and obvious repetition while keeping meaning and natural delivery.
-- English word groups and Chinese semantic phrases use different caption rhythms.
-- Add a first-frame cover, opening title, relevant visuals, and optional configured closing.
-- Verify faces, captions, visuals, and timing in the composed output.
+**Turn a phone recording into a vertical video with a readable title, synchronized captions, and relevant visuals.** The previews below come from my actual creator projects.
 
-## Install & use
+<p align="center">
+  <img src="docs/media/short-preview.gif" width="300" alt="Actual short video: opening title, changing captions and topic screenshot">
+  <img src="docs/media/picture-in-picture.jpg" width="300" alt="Actual short video: source excerpt, captions and speaker picture-in-picture">
+</p>
 
-Send [this repository](https://github.com/leilei926524-tech/koki-short-video-skill) to your agent and ask:
+Left: a six-second silent excerpt showing the title, captions, and transition to a topic screenshot. Right: a source card with highlighted information, subtitles, and the speaker kept visible in a corner.
+
+| You provide | You get |
+| --- | --- |
+| Talking-head footage, including retakes | A tighter speech edit that keeps the full meaning |
+| A script and relevant source material | Corrected captions and timed visuals |
+| A title and optional closing assets | A cover/title/closing treatment in an editable project |
+
+These are real project styles; set your own fonts, caption rhythm, and closing. The GIF is a small silent preview, not the full exported video. [Media details](docs/media/README.md).
+
+## Quick start
+
+### 1. Connect the editor
+
+Use Codex or a compatible agent with ChatCut connected. For a new setup, follow [ChatCut's official installation guide](https://chatcut.io/docs/agent-plugin). In the desktop agent you can send:
 
 ```text
-Install the skill in skills/vertical-talking-head from this repository. If a skill with the same name already exists, keep it and tell me about the conflict before replacing it.
+Read ChatCut.io/desktop to install ChatCut
 ```
 
-Alternatively, download the repository and copy the complete `skills/vertical-talking-head` folder into your tool's personal skill directory. Use a tool that supports Agent Skills; editing also needs an available editor connection.
+Sign in inside ChatCut, then start a new agent chat. Ask it to list your ChatCut projects to verify the connection. For an existing hosted Web project, use the [Web connection guide](https://chatcut.io/docs/web-plugin).
+
+### 2. Install this skill
+
+Paste the following into Codex:
 
 ```text
-Use $vertical-talking-head to edit this vertical talking-head video. Clean the speech, use English word groups or natural Chinese phrases for captions, add relevant visuals, and save an editable project.
+$skill-installer Install the skill from
+https://github.com/leilei926524-tech/koki-short-video-skill/tree/main/skills/vertical-talking-head
+Keep an existing skill with the same name and report a conflict before replacing it.
 ```
 
-The default [SKILL.md](skills/vertical-talking-head/SKILL.md) is in English. A [Chinese edition](skills/vertical-talking-head/SKILL.zh-CN.md) is included; references contain both languages. Output language follows your request.
+Start a new chat after installation, then invoke `$vertical-talking-head`. Other Agent Skills-compatible tools can use the same complete `skills/vertical-talking-head` folder through their own installation method. See [Codex skills documentation](https://learn.chatgpt.com/docs/build-skills).
+
+### 3. Provide footage and preferences
+
+Attach your recording or give a local path in your own project, such as `./input/talking-head.mp4`. Optionally add a reference script, title, topic-media folder, caption language, and closing photos/CTA. Say whether to edit an existing project or create a new one.
+
+### 4. Make your first short
+
+```text
+Use $vertical-talking-head with ChatCut.
+Footage: ./input/talking-head.mp4
+Create a 9:16 editable project. Conservatively clean the voice and remove
+failed takes, repeated starts, and excessive pauses while keeping the meaning.
+Use natural Chinese phrase captions, one line per card, clear of my face.
+Title: [my title]. Add a first-frame cover and opening title.
+Find relevant visuals in ./media/ and align them with the matching speech.
+Save the editable project and show me the preview.
+```
+
+For English, replace the caption request with: “Use English uppercase captions, one or two words at a time.” If no closing images/CTA were supplied, leave that part out.
+
+### 5. Revise, then export when ready
+
+```text
+Keep the current speech edit. Move the captions above the picture-in-picture
+so neither the source text nor my face is covered. Check the composed frame.
+```
+
+You receive an editable project with separate speech, captions, titles, and visuals. Open it in ChatCut to adjust by hand or keep giving natural-language revisions. When ready, ask: “Export the current version as an MP4 and provide the download.”
 
 ## Make it yours
 
@@ -54,3 +101,5 @@ For collaborations or questions, message me on [X](https://x.com/kokisanai) or [
 ## License
 
 Original skill instructions and adapter code are licensed under [MIT](LICENSE). Third-party products, fonts, media, and services retain their own licenses and terms.
+
+Demo media are included for showcasing the workflow; rights in the footage, likenesses, and third-party excerpts remain with their respective owners and are not granted by the MIT code license. See [media details](docs/media/README.md).
