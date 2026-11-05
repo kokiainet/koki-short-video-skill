@@ -1,0 +1,19 @@
+# Copy to creator.local.yaml in your working project. / 复制到工作项目。
+# Read by the agent; not an executable or account authorization file.
+creator:
+  display_name: "Creator"
+  identity_line: ""
+media:
+  topic_directory: "./private-media/topic"
+  closing_images: []
+short_video:
+  width: 1080
+  height: 1920
+  playback_rate: 1.1
+  title_font: "Smiley Sans"
+  english_caption_style: "Dogme"
+  english_caption_font: "Archivo Black"
+  chinese_caption_font: "Noto Sans SC"
+  closing_cta_lines: []
+  closing_anchor: "self-introduction or closing line"
+  add_music: false
