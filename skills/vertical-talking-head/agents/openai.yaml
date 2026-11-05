@@ -1,0 +1,4 @@
+interface:
+  display_name: "Koki Short Video / 短视频"
+  short_description: "Editable vertical videos and captions / 竖屏口播"
+  default_prompt: "Use $vertical-talking-head to edit my footage and save an editable project."
