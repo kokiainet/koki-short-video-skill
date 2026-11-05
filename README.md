@@ -11,11 +11,11 @@ A standalone skill from my own creator workflow, shared as a configurable public
 **Turn a phone recording into a vertical video with a readable title, synchronized captions, and relevant visuals.** The previews below come from my actual creator projects.
 
 <p align="center">
-  <img src="docs/media/short-preview.gif" width="300" alt="Actual short video: opening title, changing captions and topic screenshot">
-  <img src="docs/media/picture-in-picture.jpg" width="300" alt="Actual short video: source excerpt, captions and speaker picture-in-picture">
+  <img src="docs/media/short-preview-en.gif" width="300" alt="Actual English short: English title, uppercase word captions and English source screenshot">
+  <img src="docs/media/short-title-en.jpg" width="300" alt="Actual English short opening: DEEPSEEK JUST KILLED OPENAI title and English caption">
 </p>
 
-Left: a six-second silent excerpt showing the title, captions, and transition to a topic screenshot. Right: a source card with highlighted information, subtitles, and the speaker kept visible in a corner.
+Left: a six-second silent excerpt from the original English edit, with an English opening title, uppercase word captions, and an English source screenshot. Right: the opening frame from that same English video. The Chinese README has separate Chinese examples.
 
 | You provide | You get |
 | --- | --- |
@@ -60,13 +60,13 @@ Use $vertical-talking-head with ChatCut.
 Footage: ./input/talking-head.mp4
 Create a 9:16 editable project. Conservatively clean the voice and remove
 failed takes, repeated starts, and excessive pauses while keeping the meaning.
-Use natural Chinese phrase captions, one line per card, clear of my face.
+Use English uppercase captions, one or two words at a time, clear of my face.
 Title: [my title]. Add a first-frame cover and opening title.
 Find relevant visuals in ./media/ and align them with the matching speech.
 Save the editable project and show me the preview.
 ```
 
-For English, replace the caption request with: “Use English uppercase captions, one or two words at a time.” If no closing images/CTA were supplied, leave that part out.
+For Chinese, replace the caption request with: “Use natural Chinese phrase captions, one line per card.” If no closing images/CTA were supplied, leave that part out.
 
 ### 5. Revise, then export when ready
 
