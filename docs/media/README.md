@@ -2,6 +2,8 @@
 
 ## English
 
+The English README uses `short-preview-en.gif` (00:00–00:06) and `short-title-en.jpg` (opening frame) from Koki's original English DeepSeek video. The original English title, uppercase English word captions, and English source screenshot are retained. The Chinese README continues using the Chinese edit and its own source-card example.
+
 `short-preview.gif` is a silent, reduced-size excerpt from 00:00–00:06 of Koki's edited vertical video about DeepSeek. It shows the real opening title, captions, and source screenshot without changing their order or timing. `picture-in-picture.jpg` is a real composed frame from Koki's Caixin Summit project, showing a source excerpt, captions, and the presenter inset. The visible news text is attributed in the frame.
 
 ## 简体中文
